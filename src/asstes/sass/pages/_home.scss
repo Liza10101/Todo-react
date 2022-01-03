@@ -1,0 +1,59 @@
+.todo-wrapper {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.todo-list {
+    height: 480px;
+    overflow: auto;
+    margin: 30px 0;
+    padding: 10px;
+    .list {
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px 20px;
+        margin-bottom: 10px;        
+        border: 2px solid #cbffcb;
+        position: relative;
+        &.active {
+            border: 2px solid #ffcfcf;
+        }
+        .complete-star {
+            color: #f2d002;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: $font-lg;
+        }
+        span {
+            font-size: $font-xs;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 6px;
+        margin-left: 4px;
+        border-radius: 8px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background:rgb(233, 233, 233); 
+        border-radius: 8px;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgb(156, 156, 156); 
+        border-radius: 8px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgb(121, 121, 121); 
+      }
+}
+
+.cannabi-icon {
+    color: #e69502;
+    font-size: 30px;
+}
